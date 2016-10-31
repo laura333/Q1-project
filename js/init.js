@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('.parallax').parallax();
     $('.modal').modal();
     $('.gender').on('click', function() {
-        console.log('????????')
+        console.log('clicked!')
     });
     // var genderBtns = document.getElementsByClassName('gender')
     // for (var i = 0; i < genderBtns.length; i++) {
