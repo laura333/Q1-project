@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuerying</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<h1>jQuery Mania</h1>
+
+<p>1. Hide me when clicked.</p>
+<div class="hideMe"></div>
+
+
+<hr>
+
+
+<h2>Questions 2-5 should style this list:</h2>
+<ul>
+  <li>I am a list item</li>
+  <li>Remove Me!!</li>
+  <li>Turn me #8A2BE2 !!</li>
+  <li>Place another 'li' below me</li>
+  <li>I have eaten my fellow items...</li>
+</ul>
+
+<p>2. <button class="changeColor">Click Here</button> to change the color of the third "li" element.</p>
+<p>3. When the forth item is clicked, add another beneath it.</p>
+<p>4. <button id="removeLi">Click Here</button> to remove the second "li".</p>
+<p>5. When the last list item is clicked, change its font size to 40px and hide all other items.</p>
+
+
+<hr>
+
+
+<p>6. When clicked make 1 more of me!</p>
+<img class="cute" src="http://hdwallnpics.com/wp-content/gallery/cute-golden-retriever-puppy-pictures/golden-retriever-puppies.jpg" alt="puppy" />
+
+
+<hr>
+
+
+<div class="clones"></div>
+<p>7. On a double-click anywhere on the page, turn this rounded rectangle into a square.<br>
+HINT: use .dblclick() instead of .click()</p>
+<div id="makeSquare"></div>
+
+
+<hr>
+
+
+<p>8. Alert the user if they click this button: <button id="dontClick">Don't Click Here !</button></p>
+
+
+<hr>
+<h2>ADVANCED TRACK:</h2>
+
+
+<p>9. On click, change the page background to match these beautiful swatches.</p>
+<div class="swatches">
+  <div class="black swatch"></div>
+  <div class="wood swatch"></div>
+  <div class="chaos swatch"></div>
+  <div class="restore swatch"></div>
+</div>
+
+<hr>
+
+<p>10. When your mouse is over the box, turn it red.<br>
+11. Add the class 'green' when clicked<br>
+12. Remove the class 'green' when clicked again.<br>
+<br>
+HINT: When we're manipulating an item through a specific order of events,<br>
+the best practice is to nest your $selector.action() statements.</p>
+<div id="hover"></div>
+
+</body>
+</html>

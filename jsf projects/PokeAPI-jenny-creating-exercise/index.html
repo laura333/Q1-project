@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>PokéAPI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="wheelnavjs/raphael.min.js"></script>
+    <script type="text/javascript" src="wheelnavjs/raphael.icons.min.js"></script>
+    <script type="text/javascript" src="wheelnavjs/wheelnav.min.js"></script>
+  </head>
+
+  <body>
+
+  <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('img/lotsopoke.png')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>PokéAPI</h1>
+              <hr class="small">
+              <span class="subheading">Gotta catch 'em all!</span> </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="wheelDiv"></div>
+      </div>
+      <div class="col-sm-6" id="inputs">
+          <div id="buttons">
+            <div class="btn btn-success hidden" id="random" onclick="randomPoke();">Give me a random Pokémon!</div>
+
+            <div class="btn btn-success hidden" id="id" onclick="pokeByID();">Search for a Pokémon by ID</div>
+            <input class="userInputID hidden" type="text" placeholder="Enter a Pokemon ID">
+
+            <div class="btn btn-success hidden" id="name" onclick="pokeByName();">Search for a Pokémon by Name</div>
+            <input class="userInputName hidden" type="text" placeholder="Enter a Pokemon Name">
+
+            <div class="btn btn-success hidden" id="color" onclick="pokeByColor();">Search for a Pokémon by Color</div>
+            <div class= "userInputColor hidden">
+              <select name = "color">
+                <option value = "black">black</option>
+                <option value = "blue">blue</option>
+                <option value = "brown">brown</option>
+                <option value = "gray">gray</option>
+                <option value = "green">green</option>
+                <option value = "pink">pink</option>
+                <option value = "purple">purple</option>
+                <option value = "red">red</option>
+                <option value = "white">white</option>
+                <option value = "yellow">yellow</option>
+              </select>
+            </div>
+
+
+
+          </div>
+          <div id="result"></div>
+          <br>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer></footer>
+    </body>
+  </html>

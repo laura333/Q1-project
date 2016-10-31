@@ -1,0 +1,34 @@
+  /*#div1 {
+    width: 33%;
+    height: 100%;
+    background-color: #4A235A;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #div2 {
+    width: 33%;
+    height: 100%;
+    background-color: #0B5345;
+    position: fixed;
+    left: 33%;
+    top: 0px;
+  }
+  #div3 {
+    width: 33%;
+    height: 100%;
+    background-color: #154360;
+    position: fixed;
+    left: 66%;
+    top: 0px;
+  }
+  @media (max-width: 600px) {
+    #div1, #div2, #div3 {
+      clear: both;
+      width: 100%;
+    }
+  }*/
+  table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
