@@ -13,14 +13,14 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
-  font-family: "Comic Book";
+  font-family: "Permanent Marker";
 }
 
 .btn-large {
   height: 100px;
   line-height: 100px;
   width: 300px;
-  font-family: "Comic Book";
+  font-family: "Permanent Marker";
   font-size: 24px;
 }
 
@@ -29,7 +29,7 @@ p {
 }
 
 h1 {
-  font-family: "Comic Book";
+  font-family: "Permanent Marker";
   text-shadow: 1px 2px #ffffff;
 }
 .parallax {
@@ -51,7 +51,7 @@ h1 {
 }*/
 
 h4 {
-    font-family: "Comic Book";
+    font-family: "Permanent Marker";
     text-shadow: 1px 2px #0d47a1;
   }
 
