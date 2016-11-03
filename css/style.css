@@ -52,18 +52,39 @@ h1 {
 
 h3 {
     font-family: "Permanent Marker";
+    color: red;
     text-shadow: 1px 2px #0d47a1;
   }
 
 h4 {
     font-family: "Permanent Marker";
+    color: yellow;
     text-shadow: 1px 2px #0d47a1;
   }
 
-/*#results {
+.char-img {
+  width: 80%;
+  /*height: 75%;*/
+}
+
+.summary {
+  padding: 1px 1px 1px 25px;
+  text-align: left;
+
+}
+/*.preloader-wrapper {
+  display: inline;
+}*/
+
+#result {
   font-family: "Permanent Marker";
+  font-size: 33px;
+  /*color: red;*/
   /*text-shadow: 1px 2px #0d47a1;*/
-/*}
+  min-height: 650px;
+  /*line-height: 0;
+  height: auto;*/
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

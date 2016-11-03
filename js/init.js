@@ -33,19 +33,20 @@ $(document).ready(function() {
                 var char = data.results[randomNum];
                 console.log(char);
 
-                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url !== null) {
+                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url && char.id !== null) {
 
-                    $("#result").append("Name: " + char.name +
-                        "<br><img src=" + char.image.super_url + ">" +
-                        "<br>Origin: " + char.origin.name +
-                        "<br>Summary: " + char.deck);
+                    $("#result").append('Name: ' + char.name +
+                        '<br><br><img class="char-img" src=' + char.image.super_url + '>' +
+                        '<br>Origin: ' + char.origin.name +
+                        '<br><p class="summary">Summary: ' + char.deck);
 
-                    console.log(char.gender, char.origin.name, char.deck, char.image.super_url);
+                    // console.log(char.gender, char.origin.name, char.deck, char.image.super_url);
                 }
         });
 
         $xhr.fail(function(err) {
             console.log(err);
         });
+        $('#result').modal('open');
     });
 });
