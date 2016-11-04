@@ -47,9 +47,19 @@ $(document).ready(function() {
         answers.gender = gender;
         // console.log(answers);
         var $xhr = $.getJSON('https://g-comicvine2.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
-        // var $xhr = $(data.js);
+        // var $xhr = $('data.js');
 
-        // $('#modal5').modal('open');
+        $('.popup').toggle();
+        $('#modal5').modal('open');
+        $('#modal5').on('click', function() {
+          $('#modal6').modal('open');
+        });
+        $('#modal6').on('click', function() {
+          $('#modal7').modal('open');
+        });
+        $('#modal7').on('click', function() {
+          $('#result').modal('open');
+        });
 
         $xhr.done(function(data) {
             if ($xhr.status !== 200) {
@@ -74,13 +84,17 @@ $(document).ready(function() {
                         '<br><p class="description">Description: ' + char.deck);
 
                     // console.log(char.gender, char.origin.name, char.deck, char.image.super_url);
+                    // $('.background').toggle();
+                    // $('#result').modal('open');
                 }
         });
 
         $xhr.fail(function(err) {
             console.log(err);
+            $('.popup').toggle();
+            // $('.background').toggle();
         });
-        $('#result').modal('open');
+
         // $('#modal7').modal('open');
         // $('#modal6').modal('open');
         // $('#modal5').modal('open');

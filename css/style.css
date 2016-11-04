@@ -62,6 +62,22 @@ h4 {
     text-shadow: 1px 2px #0d47a1;
   }
 
+.popup {
+  display: none;
+}
+
+.modal-img1 {
+  background-image: url();
+  background-size: contain;
+}
+.modal-img2 {
+  background-image: url();
+  background-size: contain;
+}
+.modal-img3 {
+  background-image: url();
+  background-size: contain;
+}
 /*.char-img {*/
   /*width: 80%;*/
   /*height: 75%;*/
