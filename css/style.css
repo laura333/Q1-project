@@ -62,16 +62,16 @@ h4 {
     text-shadow: 1px 2px #0d47a1;
   }
 
-.char-img {
-  width: 80%;
+/*.char-img {*/
+  /*width: 80%;*/
   /*height: 75%;*/
-}
+/*}*/
 
 .summary {
-  padding: 1px 1px 1px 25px;
+  padding: 1px 1px 25px 25px;
   text-align: left;
-
 }
+
 /*.preloader-wrapper {
   display: inline;
 }*/
@@ -81,7 +81,7 @@ h4 {
   font-size: 33px;
   /*color: red;*/
   /*text-shadow: 1px 2px #0d47a1;*/
-  min-height: 650px;
+  min-height: 500px;
   /*line-height: 0;
   height: auto;*/
 }

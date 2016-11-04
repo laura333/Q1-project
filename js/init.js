@@ -18,6 +18,8 @@ $(document).ready(function() {
         var $xhr = $.getJSON('https://g-comicvine.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
         // var $xhr = $(data.js);
 
+        $('#modal5').modal('open');
+
         $xhr.done(function(data) {
             if ($xhr.status !== 200) {
                 return;
@@ -33,7 +35,7 @@ $(document).ready(function() {
                 var char = data.results[randomNum];
                 console.log(char);
 
-                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url && char.id !== null) {
+                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url !==null) {
 
                     $("#result").append('Name: ' + char.name +
                         '<br><br><img class="char-img" src=' + char.image.super_url + '>' +
@@ -48,5 +50,10 @@ $(document).ready(function() {
             console.log(err);
         });
         $('#result').modal('open');
+        // $('#modal7').modal('open');
+        // $('#modal6').modal('open');
+        // $('#modal5').modal('open');
+
+
     });
 });
