@@ -8,6 +8,37 @@ $(document).ready(function() {
 
     var answers = {};
 
+    // $('.gender').on('click', function(mf) {
+    //     var $elmf = $(mf.target);
+    //     var gender = $elmf.text();
+    //     answers.gender = gender;
+    //     // console.log(answers);
+    //
+    //     $('#modal2').modal('open');
+    // });
+    //
+    // $('.origin').on('click', function(type) {
+    //     var $eltype = $(type.target);
+    //     var origin = $eltype.text();
+    //     answers.origin = origin;
+    //     // console.log(answers);
+    //     // console.log(origin);
+    //
+    //     $('#modal3').modal('open');
+    // });
+    //
+    // $('.deck').on('click', function(prop) {
+    //     var $elprop = $(prop.target);
+    //     var propensity = $elprop.text();
+    //     answers.propensity = propensity;
+    //     console.log(answers);
+    //
+    //     $('#modal4').modal('open');
+    // });
+    //
+    // $('#modal4').on('click', function(event) {
+    //     event.preventDefault();
+
     $('.gender').on('click', function(event) {
       event.preventDefault();
 
@@ -15,10 +46,10 @@ $(document).ready(function() {
         var gender = $elmf.text();
         answers.gender = gender;
         // console.log(answers);
-        var $xhr = $.getJSON('https://g-comicvine.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
+        var $xhr = $.getJSON('https://g-comicvine2.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
         // var $xhr = $(data.js);
 
-        $('#modal5').modal('open');
+        // $('#modal5').modal('open');
 
         $xhr.done(function(data) {
             if ($xhr.status !== 200) {
@@ -35,12 +66,12 @@ $(document).ready(function() {
                 var char = data.results[randomNum];
                 console.log(char);
 
-                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url !==null) {
+                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url) {
 
                     $("#result").append('Name: ' + char.name +
                         '<br><br><img class="char-img" src=' + char.image.super_url + '>' +
                         '<br>Origin: ' + char.origin.name +
-                        '<br><p class="summary">Summary: ' + char.deck);
+                        '<br><p class="description">Description: ' + char.deck);
 
                     // console.log(char.gender, char.origin.name, char.deck, char.image.super_url);
                 }
