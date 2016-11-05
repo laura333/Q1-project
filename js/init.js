@@ -46,7 +46,7 @@ $(document).ready(function() {
         var gender = $elmf.text();
         answers.gender = gender;
         // console.log(answers);
-        var $xhr = $.getJSON('https://g-comicvine2.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
+        var $xhr = $.getJSON('https://g-comicvine3.herokuapp.com/api/characters?api_key=19b875b3fb7d4abe44bbf49506248a975491895f&format=JSON&filter=gender:' + answers.gender);
         // var $xhr = $('data.js');
 
         $('.popup').toggle();
@@ -76,7 +76,8 @@ $(document).ready(function() {
                 var char = data.results[randomNum];
                 console.log(char);
 
-                if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url) {
+                // if (char.gender && char.origin && char.origin.name && char.deck && char.image && char.image.super_url) {
+                if (char.image.super_url) {
 
                     $("#result").append('Name: ' + char.name +
                         '<br><br><img class="char-img" src=' + char.image.super_url + '>' +

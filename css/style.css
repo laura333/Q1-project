@@ -66,18 +66,10 @@ h4 {
   display: none;
 }
 
-.modal-img1 {
-  background-image: url();
-  background-size: contain;
+.responsive-img {
+width: 80%;  
 }
-.modal-img2 {
-  background-image: url();
-  background-size: contain;
-}
-.modal-img3 {
-  background-image: url();
-  background-size: contain;
-}
+
 /*.char-img {*/
   /*width: 80%;*/
   /*height: 75%;*/
