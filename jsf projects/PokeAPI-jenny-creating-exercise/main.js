@@ -55,6 +55,9 @@ function randomPoke(){
     error: function(){
       alert('An error has occurred');
     },
+
+    timeout: 5000
+
     success: function(results){
       console.log(results);
       $("#result").html("Name: " + results.name +

@@ -1,0 +1,18 @@
+footer.page-footer {
+  margin: 0;
+  background: #414042;
+  padding: 20px 0;
+  width: 100%;
+}
+
+body {
+  font-family: "news-gothic-std",sans-serif;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.white-text {
+  color: white;
+}
