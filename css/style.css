@@ -67,7 +67,7 @@ h4 {
 }
 
 .responsive-img {
-width: 80%;  
+width: 80%;
 }
 
 /*.char-img {*/
@@ -119,4 +119,8 @@ width: 80%;
 
 footer.page-footer {
   margin: 0;
+}
+
+#underline {
+  text-decoration: underline;
 }
